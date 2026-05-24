@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDMED - Clinique Médicale | Consultation, Laboratoire & Pharmacie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo/image-removebg-preview (14).png" alt="VIDMED Logo" class="logo-img">
+                <span>VIDMED</span>
+            </div>
+            <nav class="nav">
+                <a href="#accueil" data-translate="nav.home">Akèy</a>
+                <a href="#services" data-translate="nav.services">Sèvis</a>
+                <a href="#cliniques" data-translate="nav.clinics">Klinik yo</a>
+                <a href="#contact" data-translate="nav.contact">Kontakte</a>
+            </nav>
+
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="lang-btn active" data-lang="ht">
+                    <span class="flag">🇭🇹</span>
+                    <span class="lang-text">Kreyòl</span>
+                </button>
+                <button class="lang-btn" data-lang="fr">
+                    <span class="flag">🇫🇷</span>
+                    <span class="lang-text">Français</span>
+                </button>
+                <button class="lang-btn" data-lang="en">
+                    <span class="flag">🇺🇸</span>
+                    <span class="lang-text">English</span>
+                </button>
+            </div>
+
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="pill-decoration pill-1"></div>
+        <div class="pill-decoration pill-2"></div>
+        <div class="pill-decoration pill-3"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="fade-in" data-translate="hero.title">Sante Ou,<br>Priyorite Nou</h1>
+                <p class="fade-in delay-1" data-translate="hero.description">VIDMED se yon klinik modèn ki ofri sèvis konplè: konsiltasyon medikal, laboratwa analiz ak famasi. De etablisman pou sèvis ou pou pran swen sante ou.</p>
+                <div class="hero-buttons fade-in delay-2">
+                    <a href="#cliniques" class="btn btn-primary" data-translate="hero.btn1">Klinik Nou Yo</a>
+                    <a href="#contact" class="btn btn-secondary" data-translate="hero.btn2">Pran Randevou</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in delay-3">
+                <div class="stories-carousel">
+                    <!-- Progress bars (comme WhatsApp) -->
+                    <div class="stories-progress">
+                        <div class="progress-bar active" data-index="0"></div>
+                        <div class="progress-bar" data-index="1"></div>
+                        <div class="progress-bar" data-index="2"></div>
+                        <div class="progress-bar" data-index="3"></div>
+                        <div class="progress-bar" data-index="4"></div>
+                        <div class="progress-bar" data-index="5"></div>
+                    </div>
+
+                    <!-- Images -->
+                    <div class="carousel-images">
+                        <img src="images/photo_2026-05-24_11-41-20.jpg" alt="VIDMED Clinique 1" class="carousel-img active">
+                        <img src="images/photo_2026-05-24_11-41-25.jpg" alt="VIDMED Clinique 2" class="carousel-img">
+                        <img src="images/photo_2026-05-24_11-41-27.jpg" alt="VIDMED Clinique 3" class="carousel-img">
+                        <img src="images/photo_2026-05-24_11-41-28.jpg" alt="VIDMED Clinique 4" class="carousel-img">
+                        <img src="images/photo_2026-05-24_11-41-29.jpg" alt="VIDMED Clinique 5" class="carousel-img">
+                        <img src="images/photo_2026-05-24_11-41-31.jpg" alt="VIDMED Clinique 6" class="carousel-img">
+                    </div>
+
+                    <!-- Navigation buttons -->
+                    <button class="carousel-nav carousel-prev" aria-label="Précédent">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="carousel-nav carousel-next" aria-label="Suivant">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18L15 12L9 6" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+
+                    <!-- Pause/Play button -->
+                    <button class="carousel-pause" aria-label="Pause/Play">
+                        <svg class="pause-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="4" width="4" height="16" fill="white"/>
+                            <rect x="14" y="4" width="4" height="16" fill="white"/>
+                        </svg>
+                        <svg class="play-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                            <path d="M8 5V19L19 12L8 5Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-translate="services.title">Sèvis Nou Yo</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in-up">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 8C18.5 8 14 12.5 14 18C14 20.5 14.8 22.8 16.2 24.6L24 40L31.8 24.6C33.2 22.8 34 20.5 34 18C34 12.5 29.5 8 24 8Z" stroke="#0A6E7C" stroke-width="3" fill="none"/>
+                            <circle cx="24" cy="18" r="4" fill="#0A6E7C"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="services.consultation.title">Konsiltasyon Medikal</h3>
+                    <p data-translate="services.consultation.desc">Konsiltasyon ak doktè kalifye pou tout bezwen sante ou. Randevou rapid ak fleksib.</p>
+                </div>
+                <div class="service-card fade-in-up delay-1">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="12" width="32" height="28" rx="2" stroke="#FF6B6B" stroke-width="3" fill="none"/>
+                            <rect x="14" y="20" width="8" height="8" fill="#FF6B6B"/>
+                            <rect x="26" y="20" width="8" height="8" fill="#FF6B6B"/>
+                            <rect x="14" y="30" width="8" height="4" fill="#FF6B6B"/>
+                            <rect x="26" y="30" width="8" height="4" fill="#FF6B6B"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="services.lab.title">Laboratwa Analiz</h3>
+                    <p data-translate="services.lab.desc">Analiz medikal konplè ak rezilta rapid e serye. Ekipman modèn ak pèsonèl kalifye.</p>
+                </div>
+                <div class="service-card fade-in-up delay-2">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="18" y="8" width="12" height="32" rx="6" fill="#0A6E7C"/>
+                            <rect x="8" y="18" width="32" height="12" rx="6" fill="#0A6E7C"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="services.pharmacy.title">Famasi</h3>
+                    <p data-translate="services.pharmacy.desc">Medikaman sou òdonans ak san òdonans. Konsèy famasyen pèsonalize pa famasyen nou yo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cliniques Section -->
+    <section id="cliniques" class="pharmacies">
+        <div class="container">
+            <h2 class="section-title" data-translate="clinics.title">De Klinik Nou Yo</h2>
+            <div class="pharmacies-grid">
+                <!-- Clinique 1 -->
+                <div class="pharmacy-card fade-in-up">
+                    <div class="pharmacy-header">
+                        <div class="pharmacy-number">01</div>
+                        <h3>VIDMED 1</h3>
+                    </div>
+                    <div class="pharmacy-content">
+                        <div class="info-block">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z" stroke="#0A6E7C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="9" r="2.5" stroke="#0A6E7C" stroke-width="2"/>
+                            </svg>
+                            <div>
+                                <h4 data-translate="clinic.address">Adrès</h4>
+                                <p>40 B, Rue Magua<br>Delmas 31, Pòtoprens</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92V19.92C22 20.49 21.54 20.96 20.97 21C20.61 21.01 20.26 20.97 19.92 20.88C16.73 20.01 13.73 18.51 11.19 16.5C8.86 14.67 6.96 12.39 5.58 9.82C3.85 7.01 2.79 3.84 2.43 0.56C2.39 0.19 2.5 -0.17 2.74 -0.46C2.98 -0.75 3.33 -0.93 3.7 -0.97H6.7C7.27 -0.97 7.75 -0.52 7.83 0.05C7.91 0.62 8.03 1.19 8.2 1.74C8.39 2.43 8.18 3.17 7.66 3.64L6.25 5.05C7.84 8.26 10.74 11.16 13.95 12.75L15.36 11.34C15.83 10.82 16.57 10.61 17.26 10.8C17.81 10.97 18.38 11.09 18.95 11.17C19.52 11.25 19.97 11.73 19.97 12.3V15.3Z" stroke="#FF6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div>
+                                <h4 data-translate="clinic.phone">Telefòn / WhatsApp</h4>
+                                <p>+509 3633 3682</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="#0A6E7C" stroke-width="2"/>
+                                <path d="M12 6V12L16 14" stroke="#0A6E7C" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <div>
+                                <h4 data-translate="clinic.hours">Orè</h4>
+                                <p data-translate="clinic.hours.text">Louvri 24è/24 - 7j/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clinique 2 -->
+                <div class="pharmacy-card fade-in-up delay-1">
+                    <div class="pharmacy-header">
+                        <div class="pharmacy-number">02</div>
+                        <h3>VIDMED 2</h3>
+                    </div>
+                    <div class="pharmacy-content">
+                        <div class="info-block">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z" stroke="#0A6E7C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="9" r="2.5" stroke="#0A6E7C" stroke-width="2"/>
+                            </svg>
+                            <div>
+                                <h4 data-translate="clinic.address">Adrès</h4>
+                                <p>18, Rue Merisier<br>Delmas 48, Pòtoprens</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92V19.92C22 20.49 21.54 20.96 20.97 21C20.61 21.01 20.26 20.97 19.92 20.88C16.73 20.01 13.73 18.51 11.19 16.5C8.86 14.67 6.96 12.39 5.58 9.82C3.85 7.01 2.79 3.84 2.43 0.56C2.39 0.19 2.5 -0.17 2.74 -0.46C2.98 -0.75 3.33 -0.93 3.7 -0.97H6.7C7.27 -0.97 7.75 -0.52 7.83 0.05C7.91 0.62 8.03 1.19 8.2 1.74C8.39 2.43 8.18 3.17 7.66 3.64L6.25 5.05C7.84 8.26 10.74 11.16 13.95 12.75L15.36 11.34C15.83 10.82 16.57 10.61 17.26 10.8C17.81 10.97 18.38 11.09 18.95 11.17C19.52 11.25 19.97 11.73 19.97 12.3V15.3Z" stroke="#FF6B6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div>
+                                <h4 data-translate="clinic.phone">Telefòn / WhatsApp</h4>
+                                <p>+509 3633 3682</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="#0A6E7C" stroke-width="2"/>
+                                <path d="M12 6V12L16 14" stroke="#0A6E7C" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <div>
+                                <h4 data-translate="clinic.hours">Orè</h4>
+                                <p data-translate="clinic.hours.text">Louvri 24è/24 - 7j/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp CTA Section -->
+    <section class="whatsapp-cta">
+        <div class="container">
+            <div class="whatsapp-content fade-in-up">
+                <div class="whatsapp-icon">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="32" cy="32" r="30" fill="#25D366"/>
+                        <path d="M32 16C23.163 16 16 23.163 16 32C16 34.775 16.744 37.372 18.034 39.625L16.094 46.906L23.594 45.031C25.772 46.206 28.294 46.906 31 46.906C39.837 46.906 47 39.743 47 30.906C47 22.069 39.837 16 31 16H32ZM32 18.906C38.266 18.906 43.344 24.015 43.344 30.281C43.344 36.547 38.266 41.656 32 41.656C29.7 41.656 27.525 41.019 25.656 39.875L25.219 39.594L20.719 40.719L21.906 36.344L21.563 35.875C20.3 33.931 19.656 31.675 19.656 29.344C19.656 23.078 24.734 17.969 31 17.969L32 18.906ZM26.719 24.719C26.506 24.719 26.169 24.806 25.875 25.156C25.581 25.506 24.719 26.3 24.719 27.906C24.719 29.512 25.931 31.056 26.094 31.281C26.256 31.506 28.431 35.144 31.906 36.5C34.781 37.619 35.381 37.381 36.031 37.344C36.681 37.306 37.994 36.562 38.281 35.781C38.569 35 38.569 34.344 38.5 34.219C38.431 34.094 38.206 34.031 37.875 33.875C37.544 33.719 35.944 32.925 35.656 32.813C35.369 32.7 35.144 32.656 34.906 32.969C34.669 33.281 34.081 34.031 33.875 34.25C33.669 34.469 33.469 34.5 33.156 34.344C32.844 34.188 31.825 33.856 30.625 32.781C29.694 31.944 29.069 30.906 28.875 30.594C28.681 30.281 28.856 30.094 29.031 29.938C29.181 29.8 29.344 29.569 29.5 29.375C29.656 29.181 29.719 29.031 29.844 28.813C29.969 28.594 29.906 28.406 29.813 28.25C29.719 28.094 29.131 26.475 28.844 25.844C28.556 25.212 28.275 25.281 28.063 25.281C27.85 25.281 27.619 25.281 27.375 25.281C27.131 25.281 26.731 25.375 26.438 25.688C26.144 26 25.313 26.794 25.313 28.4C25.313 30.006 26.494 31.544 26.656 31.769C26.819 31.994 29.131 35.494 32.656 36.9C35.456 38.038 36.281 37.931 37.125 37.838C37.969 37.744 39.306 37.006 39.594 36.225C39.881 35.444 39.881 34.769 39.781 34.625C39.681 34.481 39.456 34.388 39.125 34.231C38.794 34.075 37.194 33.281 36.906 33.169C36.619 33.056 36.394 33.006 36.156 33.319C35.919 33.631 35.331 34.388 35.125 34.613C34.919 34.838 34.719 34.869 34.406 34.713C34.094 34.556 33.063 34.213 31.875 33.156C30.938 32.325 30.319 31.288 30.125 30.975C29.931 30.663 30.106 30.481 30.281 30.325C30.438 30.175 30.594 29.938 30.75 29.75C30.906 29.563 30.969 29.413 31.094 29.188C31.219 28.963 31.156 28.781 31.063 28.625C30.969 28.469 30.413 26.863 30.125 26.231C29.838 25.6 29.556 25.675 29.344 25.675C29.131 25.675 28.906 25.675 28.656 25.675L26.719 24.719Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="whatsapp-text">
+                    <h2 data-translate="whatsapp.title">Bezwen èd rapid?</h2>
+                    <p data-translate="whatsapp.desc">Kontakte nou dirèkteman sou WhatsApp pou yon repons imedya</p>
+                </div>
+                <a href="https://wa.me/50936333682" target="_blank" class="btn-whatsapp">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.472 14.382C17.015 14.153 14.98 13.146 14.571 13.005C14.162 12.863 13.861 12.792 13.561 13.25C13.261 13.708 12.486 14.646 12.223 14.947C11.961 15.249 11.699 15.287 11.242 15.058C10.785 14.829 9.298 14.341 7.544 12.787C6.184 11.572 5.274 10.073 5.012 9.615C4.75 9.157 4.982 8.915 5.211 8.687C5.417 8.481 5.668 8.148 5.897 7.886C6.126 7.624 6.196 7.437 6.338 7.136C6.48 6.834 6.409 6.572 6.294 6.343C6.179 6.114 5.274 4.075 4.903 3.159C4.541 2.268 4.173 2.389 3.898 2.375C3.635 2.362 3.335 2.359 3.034 2.359C2.734 2.359 2.277 2.474 1.868 2.932C1.459 3.39 0.375 4.397 0.375 6.436C0.375 8.475 1.906 10.439 2.135 10.74C2.364 11.042 5.274 15.447 9.585 17.241C10.621 17.697 11.429 17.966 12.058 18.166C13.097 18.501 14.046 18.455 14.801 18.337C15.636 18.207 17.289 17.317 17.66 16.345C18.032 15.373 18.032 14.553 17.917 14.362C17.802 14.171 17.501 14.057 17.044 13.828L17.472 14.382Z" fill="white"/>
+                    </svg>
+                    <span data-translate="whatsapp.btn">Pale sou WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info fade-in-up">
+                    <h2 data-translate="contact.title">Kontakte Nou</h2>
+                    <p data-translate="contact.description">Bezwen yon randevou? Ekip medikal nou an la pou ede w nan swen sante w.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 8L10.89 13.26C11.21 13.47 11.59 13.59 11.99 13.59C12.39 13.59 12.77 13.47 13.09 13.26L21 8M5 19H19C20.1 19 21 18.1 21 17V7C21 5.9 20.1 5 19 5H5C3.9 5 3 5.9 3 7V17C3 18.1 3.9 19 5 19Z" stroke="#0A6E7C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>vidmedpharma1@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92V19.92C22 20.49 21.54 20.96 20.97 21C20.61 21.01 20.26 20.97 19.92 20.88C16.73 20.01 13.73 18.51 11.19 16.5C8.86 14.67 6.96 12.39 5.58 9.82C3.85 7.01 2.79 3.84 2.43 0.56C2.39 0.19 2.5 -0.17 2.74 -0.46C2.98 -0.75 3.33 -0.93 3.7 -0.97H6.7C7.27 -0.97 7.75 -0.52 7.83 0.05C7.91 0.62 8.03 1.19 8.2 1.74C8.39 2.43 8.18 3.17 7.66 3.64L6.25 5.05C7.84 8.26 10.74 11.16 13.95 12.75L15.36 11.34C15.83 10.82 16.57 10.61 17.26 10.8C17.81 10.97 18.38 11.09 18.95 11.17C19.52 11.25 19.97 11.73 19.97 12.3V15.3Z" stroke="#0A6E7C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>+509 3633 3682</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form fade-in-up delay-1">
+                    <div class="form-group">
+                        <label for="name" data-translate="contact.form.name">Non konplè</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-translate="contact.form.email">Imel</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" data-translate="contact.form.phone">Telefòn</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="clinic" data-translate="contact.form.clinic">Klinik</label>
+                        <select id="clinic" name="clinic" required>
+                            <option value="" data-translate="contact.form.clinic.select">Chwazi yon klinik</option>
+                            <option value="succursale1" data-translate="contact.form.clinic.1">VIDMED Siksizal 1 (Delmas 31)</option>
+                            <option value="succursale2" data-translate="contact.form.clinic.2">VIDMED Siksizal 2 (Delmas 48)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="service" data-translate="contact.form.service">Sèvis</label>
+                        <select id="service" name="service" required>
+                            <option value="" data-translate="contact.form.service.select">Chwazi yon sèvis</option>
+                            <option value="consultation" data-translate="contact.form.service.consultation">Konsiltasyon medikal</option>
+                            <option value="laboratoire" data-translate="contact.form.service.lab">Laboratwa analiz</option>
+                            <option value="pharmacie" data-translate="contact.form.service.pharmacy">Famasi</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-translate="contact.form.message">Mesaj</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-translate="contact.form.submit">Voye</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="logo/image-removebg-preview (14).png" alt="VIDMED Logo" class="logo-img">
+                        <span>VIDMED</span>
+                    </div>
+                    <p data-translate="footer.description">Klinik konplè: Konsiltasyon, Laboratwa ak Famasi. Sante ou, priyorite nou.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-translate="footer.links.title">Lyen Rapid</h4>
+                    <a href="#accueil" data-translate="nav.home">Akèy</a>
+                    <a href="#services" data-translate="nav.services">Sèvis</a>
+                    <a href="#cliniques" data-translate="nav.clinics">Klinik yo</a>
+                    <a href="#contact" data-translate="nav.contact">Kontakte</a>
+                </div>
+                <div class="footer-social">
+                    <h4 data-translate="footer.social.title">Suiv Nou</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">&copy; 2026 VIDMED. Tout dwa rezève.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
