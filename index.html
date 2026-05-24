@@ -3,7 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIDMED - Clinique Médicale | Consultation, Laboratoire & Pharmacie</title>
+
+    <!-- SEO Meta Tags -->
+    <title>VIDMED - Clinique Médicale Port-au-Prince | Consultation, Laboratoire & Pharmacie 24/7</title>
+    <meta name="description" content="VIDMED - Clinique médicale complète à Port-au-Prince. Consultation médicale, laboratoire d'analyses et pharmacie. 2 succursales à Delmas 31 et Delmas 48. Ouvert 24h/24, 7j/7. Contact: +509 3633 3682">
+    <meta name="keywords" content="VIDMED, clinique Port-au-Prince, clinique Delmas, consultation médicale Haïti, laboratoire Port-au-Prince, pharmacie Delmas, clinique 24/7 Haïti, médecin Port-au-Prince, analyses médicales Haïti">
+    <meta name="author" content="VIDMED">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Haitian Creole, French, English">
+    <meta name="geo.region" content="HT">
+    <meta name="geo.placename" content="Port-au-Prince, Haiti">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jeansuzanmarc.github.io/vidmed-website/">
+    <meta property="og:title" content="VIDMED - Clinique Médicale Port-au-Prince">
+    <meta property="og:description" content="Clinique complète avec consultation, laboratoire et pharmacie. 2 succursales à Delmas. Ouvert 24/7.">
+    <meta property="og:locale" content="ht_HT">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jeansuzanmarc.github.io/vidmed-website/">
+    <meta property="twitter:title" content="VIDMED - Clinique Médicale Port-au-Prince">
+    <meta property="twitter:description" content="Clinique complète avec consultation, laboratoire et pharmacie. 2 succursales à Delmas. Ouvert 24/7.">
+
+    <!-- Contact Info for SEO -->
+    <meta name="contact" content="vidmedpharma1@gmail.com">
+    <meta name="phone" content="+509 3633 3682">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://jeansuzanmarc.github.io/vidmed-website/">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -373,6 +405,73 @@
             </div>
         </div>
     </footer>
+
+    <!-- Structured Data for Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "VIDMED",
+      "description": "Clinique médicale complète offrant consultation, laboratoire d'analyses et pharmacie à Port-au-Prince, Haïti",
+      "url": "https://jeansuzanmarc.github.io/vidmed-website/",
+      "logo": "https://jeansuzanmarc.github.io/vidmed-website/logo/image-removebg-preview%20(14).png",
+      "telephone": "+509-3633-3682",
+      "email": "vidmedpharma1@gmail.com",
+      "priceRange": "$$",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "40 B, Rue Magua",
+          "addressLocality": "Delmas 31",
+          "addressRegion": "Port-au-Prince",
+          "addressCountry": "HT"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "18, Rue Merisier",
+          "addressLocality": "Delmas 48",
+          "addressRegion": "Port-au-Prince",
+          "addressCountry": "HT"
+        }
+      ],
+      "geo": [
+        {
+          "@type": "GeoCoordinates",
+          "latitude": "18.5944",
+          "longitude": "-72.3074"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/vidmed",
+        "https://www.instagram.com/vidmed"
+      ],
+      "medicalSpecialty": [
+        "GeneralPractice",
+        "Laboratory",
+        "Pharmacy"
+      ],
+      "availableService": [
+        {
+          "@type": "MedicalProcedure",
+          "name": "Consultation Médicale"
+        },
+        {
+          "@type": "MedicalTest",
+          "name": "Laboratoire d'Analyses"
+        },
+        {
+          "@type": "Service",
+          "name": "Pharmacie"
+        }
+      ]
+    }
+    </script>
 
     <script src="translations.js"></script>
     <script src="script.js"></script>
