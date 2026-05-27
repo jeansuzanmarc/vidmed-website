@@ -49,7 +49,7 @@ const translations = {
 
         "footer.description": "Klinik konplè: Konsiltasyon, Laboratwa ak Famasi. Sante ou, priyorite nou.",
         "footer.links.title": "Lyen Rapid",
-        "footer.social.title": "Suiv Nou",
+        "footer.social.title": "Swiv Nou",
         "footer.copyright": "© 2026 VIDMED. Tout dwa rezève."
     },
 
