@@ -1,0 +1,63 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+.claude/
+
+# Fichiers temporaires
+*.tmp
+*.bak
+*~
+
+# Dossiers IDE
+.vscode/
+.idea/
+*.swp
+
+# Fichiers de logs
+*.log
+
+# Fichiers personnels et temporaires (ne pas publier)
+A-PUBLIER-SUR-GITHUB.txt
+CAROUSEL-WHATSAPP.md
+CHECKLIST-APRES-PUBLICATION.md
+COMMANDES_GIT.txt
+CORRECTION-TRADUCTION.txt
+DERNIERE-MODIFICATION.txt
+GUIDE-DEMARRAGE-RAPIDE.md
+GUIDE-GOOGLE-SEO.md
+GUIDE_PUBLICATION.md
+LISEZ-MOI-EN-PREMIER.txt
+LISTE-FICHIERS-A-PUBLIER.txt
+MODIFICATIONS-FINALES.txt
+NOUVEAU-CAROUSEL.txt
+PLAN-ACTION-FINAL.md
+PRET-A-PUBLIER.txt
+RESUME-FINAL.txt
+RESUME-ULTRA-FINAL.txt
+RESUME_SITE.md
+SCRIPT-AUTO-SETUP.md
+STRUCTURE-DU-SITE.txt
+SYNTHESE-COMPLETE-PROJET.md
+TRADUCTIONS-MULTILANGUES.md
+
+# Backend - Python
+vidmed-backend/__pycache__/
+vidmed-backend/**/__pycache__/
+vidmed-backend/**/*.pyc
+vidmed-backend/.env
+vidmed-backend/venv/
+vidmed-backend/env/
+vidmed-backend/.pytest_cache/
+vidmed-backend/staticfiles/
+vidmed-backend/mediafiles/
+vidmed-backend/db.sqlite3
+
+# Frontend - Node
+vidmed-frontend/node_modules/
+vidmed-frontend/dist/
+vidmed-frontend/build/
+vidmed-frontend/.env
+vidmed-frontend/.env.local
+vidmed-frontend/.env.production
+vidmed-frontend/coverage/
