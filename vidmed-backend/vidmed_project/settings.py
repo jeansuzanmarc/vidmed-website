@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'simple_history',
 
     # Local apps
-    'core',
+    'vidmed_project.core',
 ]
 
 MIDDLEWARE = [
